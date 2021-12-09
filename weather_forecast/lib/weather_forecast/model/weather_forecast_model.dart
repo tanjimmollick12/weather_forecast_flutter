@@ -237,7 +237,7 @@ class Weather {
   });
 
   int? id;
-  String? main;
+  String main;
   String? description;
   String? icon;
 

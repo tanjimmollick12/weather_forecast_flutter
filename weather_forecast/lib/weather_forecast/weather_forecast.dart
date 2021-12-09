@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_forecast/weather_forecast/model/weather_forecast_model.dart';
+import 'package:weather_forecast/weather_forecast/ui/bottom_view.dart';
 import 'package:weather_forecast/weather_forecast/ui/mid_view.dart';
 import '';
 import 'network/network.dart';
@@ -40,6 +41,7 @@ class _weatherForecastState extends State<weatherForecast> {
                     return Column(
                       children: [
                            midView(snapshot),
+                        bottomView(snapshot, context),
                       ],
                     );
                   }else{
